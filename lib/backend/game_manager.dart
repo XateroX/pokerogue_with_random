@@ -38,6 +38,10 @@ class GameManager {
     testBattleProcessor.addPokemonToTeam("TeamB", pokemonB);
 
     testBattleProcessor.startBattle();
+
+    testBattleProcessor.addPokemonMoveAction(pokemonA, pokemonA.moves![0], pokemonB);
+    testBattleProcessor.addPokemonMoveAction(pokemonB, pokemonB.moves![0], pokemonA);
+
     print("");
   }
 }

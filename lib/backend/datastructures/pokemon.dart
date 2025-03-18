@@ -1,3 +1,7 @@
+import 'dart:math';
+
+import 'package:uuid/uuid.dart';
+
 import 'package:pokerogue_with_random/backend/data/pokemon_learnset.dart';
 import 'package:pokerogue_with_random/backend/datastructures/poke_move.dart';
 
@@ -8,6 +12,7 @@ enum PokeGenMode {
 }
 
 class Pokemon {
+  final universalId = Uuid().v4();
   final String name;
   final int id;
   final int hp;
